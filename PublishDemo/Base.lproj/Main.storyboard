@@ -10,22 +10,18 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PublishDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimatedUploadButton" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UYp-2q-7Lz" customClass="PublishLayer" customModule="PublishDemo" customModuleProvider="target">
-                                <rect key="frame" x="132" y="418" width="150" height="60"/>
-                                <color key="backgroundColor" red="0.062745098039215685" green="0.46274509803921571" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="4hw-gI-g1X"/>
-                                    <constraint firstAttribute="height" constant="60" id="C13-iy-SmE"/>
-                                </constraints>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mhy-ZG-B6O" customClass="AnimatedButton" customModule="PublishDemo" customModuleProvider="target">
-                                <rect key="frame" x="132" y="585" width="150" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mhy-ZG-B6O" customClass="AnimatedButton" customModule="AnimatedUploadButton" customModuleProvider="target">
+                                <rect key="frame" x="117" y="418" width="180" height="60"/>
                                 <color key="backgroundColor" red="0.062745098040000002" green="0.46274509800000002" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="hCi-pJ-R1D"/>
+                                    <constraint firstAttribute="height" constant="60" id="ncf-Ey-4gx"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <state key="normal" title="Upload">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -38,13 +34,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Mhy-ZG-B6O" firstAttribute="centerX" secondItem="UYp-2q-7Lz" secondAttribute="centerX" id="2Bh-cN-9cY"/>
-                            <constraint firstItem="Mhy-ZG-B6O" firstAttribute="trailing" secondItem="UYp-2q-7Lz" secondAttribute="trailing" id="Cew-7x-hmd"/>
-                            <constraint firstItem="Mhy-ZG-B6O" firstAttribute="top" secondItem="UYp-2q-7Lz" secondAttribute="bottom" constant="107" id="Cgx-0u-og3"/>
-                            <constraint firstItem="Mhy-ZG-B6O" firstAttribute="height" secondItem="UYp-2q-7Lz" secondAttribute="height" id="N8z-sW-Vje"/>
-                            <constraint firstItem="Mhy-ZG-B6O" firstAttribute="leading" secondItem="UYp-2q-7Lz" secondAttribute="leading" id="gQP-tL-wZd"/>
-                            <constraint firstItem="UYp-2q-7Lz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="r1d-Kl-NgQ"/>
-                            <constraint firstItem="UYp-2q-7Lz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wSh-Nc-jzv"/>
+                            <constraint firstItem="Mhy-ZG-B6O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RGE-QT-uhy"/>
+                            <constraint firstItem="Mhy-ZG-B6O" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Vbn-bZ-XpB"/>
                         </constraints>
                     </view>
                     <connections>

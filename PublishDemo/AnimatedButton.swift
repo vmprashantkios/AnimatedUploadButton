@@ -16,10 +16,11 @@ class AnimatedButton: UIButton {
     private var animatedButtonLayer:AnimatedButtonLayer!
     private var animatedButtonText:AnimatedButtonText!
     
-    func startAnimate(){
+    func startAnimate(uloadingText:String = "Uploading"){
         
        
         animatedButtonLayer.animateLayer()
+        animatedButtonText.setText(text: uloadingText)
         
     }
     func stopAnimate(completionText:String = "Done"){
